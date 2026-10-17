@@ -8,6 +8,15 @@ Five convolution stages with batch normalization, adaptive pooling, a 256-unit c
 
 ![Implementation mechanism: RGB image batch → Randomly initialized convolution blocks → Adaptive pooling and dropout → Landmark class logits → Cross-entropy and gradient computation](assets/mechanism.svg)
 
+
+
+## Train and evaluate the landmark CNN
+
+The public five-stage CNN now has class-folder preparation, duplicate-file split checks, a complete trainer, validation-selected checkpoints, held-out metrics and image inference. The end-to-end path is verified with generated fixtures.
+
+[Commands, artifacts and benchmark scope](BENCHMARKS.md) · [Versioned profiles](reproduction.json)
+
+
 ## Try a small example
 
 Random inputs exercise the released CNN and backpropagation. No trained checkpoint, transfer-learning result or landmark accuracy is established by this example.
