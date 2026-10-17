@@ -6,14 +6,7 @@ Build a convolutional image classifier from random initialization and inspect th
 
 Five convolution stages with batch normalization, adaptive pooling, a 256-unit classifier, and configurable class count and dropout.
 
-```mermaid
-flowchart TD
-    N0["RGB image batch"] --> N1
-    N1["Randomly initialized convolution blocks"] --> N2
-    N2["Adaptive pooling and dropout"] --> N3
-    N3["Landmark class logits"] --> N4
-    N4["Cross-entropy and gradient computation"]
-```
+![Implementation mechanism: RGB image batch → Randomly initialized convolution blocks → Adaptive pooling and dropout → Landmark class logits → Cross-entropy and gradient computation](assets/mechanism.svg)
 
 ## Try a small example
 
