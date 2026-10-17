@@ -69,3 +69,7 @@ Run the focused offline behavior checks with `python smoke_test.py` after instal
 ## Limitations
 
 This release contains the independently developed baseline experiment. Transfer-learning helpers, application scaffolding, weights, and the full image dataset are outside this source edition.
+
+## Reuse
+
+Original reproduction and validation tooling is available under MIT; see [LICENSING.md](LICENSING.md) for the explicit file scope and preserved upstream, dataset and checkpoint terms.
